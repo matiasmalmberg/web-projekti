@@ -1,7 +1,3 @@
-/* Tekemättä on vielä: Tekstimarginaalit, kuvatyyli ja marginaali, ja asettelu */
-/* Pitää myös katsoa miten logon saa nav päälle */
-
-/* Body tyyli, fontit ja yleinen väri */
 body {
     background-color: #F2F2F2;
     color: #242424;
@@ -10,28 +6,30 @@ body {
     background-size: cover; 
     margin: 0px; 
 }
-/* Navigaatio menu */
+
 nav li {
     display: inline;
 }
 nav {
     background-color: #BFDBDA;
     padding: 14px 24px 14px 24px;
+  
+
 }
-nav a, nav:visited, a:active {
+nav a, nav:visited, a:hover {
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: underline;
     color: #242424;
     font-weight: bold;
     margin-right: 24px;
 }
-/* Footer */
+
 footer {
     background-color: #BFDBDA;
     padding-top: 44px;
     font-size: 10px;
 }
-/* Mobiililaitteille, älä koske! */
+
 @media (max-width: 600px) {
     body {
         background-position: center;
