@@ -34,41 +34,38 @@
   <main class="my-3">
     <div class="container">
         <div class="text-center">
-            <h1>Meidän Toimipisteemme</h1>
+            <h1></h1>
+            <p>Onko teillä toivomuksia roduista, persoonallisuudesta tai sukupuolesta?</p>
+            <p>Jätä meille hakemus, ja otamme yhteyttä sinuun jos jossain toimipisteessämme on sinunlaisesi kissa!</p>
         </div>
 
         <div class="row g-3 align-items-center">
-            <div class="col-md-4 d-flex  flex-column">
+            <div class="row-md-4 d-flex flex-column">
               <div class="p-3 border rounded bg-light text-center h-100">
-                <h2>Kissakoti Helsinki</h2>
-                <p>Osoite: Kissakuja 12, 00100 Helsinki</p>
-                <p>Aukioloajat: Ma–Pe 10–18, La 12–16</p>
-                <p>Kodittomat kissat odottavat täällä uusia, rakastavia koteja.</p>
-                <img src="kissa1.jpeg" alt="kissoja" class="img-fluid rounded" >
+                <h2></h2>
+                    <form>
+                        <div class="form-group d-inline-block mr-2">
+                            <label for="sahkoposti">Sähköposti</label>
+                            <input type="text" class="form-control" id="sahkoposti">
+                        </div>
+                        <div class="form-group d-inline-block mr-2">
+                            <label for="puhelin">Puhelin</label>
+                            <input type="text" class="form-control" id="puhelin">
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form-group d-inline-block mr-2">
+                            <label for="nimi">Millä nimellä varaus tehdään</label>
+                            <input type="text" class="form-control" id="nimi">
+                        </div>
+                        <div class="form-group">
+                            <label for="toivo">Toivomuksesi!</label>
+                            <!-- <input type="text" class="form-control" id="email1" style="text-align: center;" rows="4"> -->
+                            <textarea class="form-control" id="toivo" rows="4"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-success my-2">Lähetä</button>
+                    </form>
               </div>
             </div>
-
-            <div class="col-md-4 d-flex flex-column">
-              <div class="p-3 border rounded bg-light text-center h-100">
-                <h2>Kissakoti Tampere</h2>
-                <p>Osoite: Tassutie 5, 33100 Tampere</p>
-                <p>Aukioloajat: Ti–Pe 11–17, La 12–15</p>
-                <p>Tarjoamme myös eläinlääkäripalveluita adoptoitaville kissoille.</p>
-                <img src="kissa2.jpeg" alt="kissoja" class="img-fluid rounded" >
-              </div>
-            </div>
-
-            <div class="col-md-4 d-flex flex-column">
-                <div class="p-3 border rounded bg-light text-center h-100">
-                  <h2>Kissakoti Turku</h2>
-                  <p>Osoite: Karvatassunkuja 8, 20100 Turku</p>
-                  <p>Aukioloajat: Ma–Pe 9–17</p>
-                  <p>Suomen suurin kissakoti. Täältä löydät varmasti haluamasi kissan.</p>
-                  <img src="kissa3.jpeg" alt="kissoja" class="img-fluid rounded" >
-                </div>
-            </div>
-        </div>
-    </div>
   </main>
 
   <footer class="py-4">
