@@ -6,14 +6,12 @@ $salasana = "password";
 
 $conn = new mysqli($palvelin, $kayttaja, $salasana);
 
-// Tarkista yhteys
 if ($conn->connect_error) {
     die("Yhteys epäonnistui: " . $conn->connect_error);
 }
 
 $conn->select_db("asiakashakemukset");
 
-// Hae kaikki asiakkaat tietokannasta
 $sql = "SELECT * FROM asiakkaat";
 $result = $conn->query($sql);
 
