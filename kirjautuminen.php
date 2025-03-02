@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (password_verify($anna_salasana, $tulos)) {
                 $_SESSION["kayttajanimi"] = $anna_kayttaja; 
-                header("Location: svenska.html"); 
+                header("Location: tietokantakatselu.html"); 
                 exit(); 
             } else {
                 echo "Virheellinen salasana!"; 
