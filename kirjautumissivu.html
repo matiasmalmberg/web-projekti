@@ -4,17 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!-- Tässä vain nopea tyyli minkä löysin netistä. Sivu ei näytä niin tylsältä. Omat värit. -->
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #BFDBDA;
+        }
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: #BFDBDA;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h2>Login</h2>
-    <form action="kirjautuminen.php" method="POST">
-        <label for="kayttajanimi">Käyttäjänimi:</label>
-        <input type="text" id="kayttajanimi" name="kayttajanimi" required><br>
-        
-        <label for="kantasalasana">Salasana:</label>
-        <input type="password" id="kantasalasana" name="kantasalasana" required><br>
-        
-        <input type="submit" value="Login">
-    </form>
+    <div class="login-container">
+        <h2>Kirjautuminen</h2>
+        <form action="kirjautuminen.php" method="POST">
+            <label for="kayttajanimi">Käyttäjänimi:</label>
+            <input type="text" id="kayttajanimi" name="kayttajanimi" required><br>
+            
+            <label for="kantasalasana">Salasana:</label>
+            <input type="password" id="kantasalasana" name="kantasalasana" required><br>
+            
+            <input type="submit" value="Kirjaudu">
+        </form>
+    </div>
 </body>
 </html>
